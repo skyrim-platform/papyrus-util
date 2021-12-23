@@ -1,7 +1,7 @@
 {
     "name": "@skyrim-platform/papyrus-util",
-    "version": "2.3.0",
-    "description": "TypeScript type definitions for the PapyrusUtil Skyrim utility",
+    "version": "4.2.0",
+    "description": "TypeScript library for the PapyrusUtil Skyrim modding utility",
     "main": "",
     "types": "index.d.ts",
     "license": "MIT",
