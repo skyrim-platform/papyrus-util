@@ -1,13 +1,13 @@
-# papyrus-util
-TypeScript types for the PapyrusUtil Skyrim utility modding library
+## `@skyrim-platform/papyrus-util`
 
-<TODO Mention the tool used for conversions>
+(Unofficial) TypeScript type definitions for the PapyrusUtil Skyrim modding utility library
 
-    "contributors": [
-        {
-            "name": "exiledviper",
-            "url": "https://www.nexusmods.com/skyrimspecialedition/users/85199"
-        }
-    ],
+- PapyrusUtil on Nexus: https://www.nexusmods.com/skyrimspecialedition/mods/13048
+- PapyrusUtil maintainer: [exiledviper](https://www.nexusmods.com/skyrimspecialedition/users/85199)
+- PapyrusUtil original author: [meh321](https://www.nexusmods.com/skyrim/users/2964753)
 
-https://www.nexusmods.com/skyrimspecialedition/mods/24858
+## Getting Started
+
+You can find an example Skyrim Platform plugin with documentation on how to get started using this library: https://github.com/skyrim-platform/example-plugin-using-libraries
+
+> Papyrus source code conversion to TypeScript originally generated using [Papyrus-2-Typescript](https://github.com/CarlosLeyvaAyala/Papyrus-2-Typescript)
