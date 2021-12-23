@@ -6,16 +6,15 @@
     "types": "index.d.ts",
     "license": "MIT",
     "homepage": "https://github.com/skyrim-platform/papyrus-util",
-    "author": "Mrowr Purr <mrowr.purr@gmail.com>",
     "repository": {
         "type": "git",
         "url": "https://github.com/skyrim-platform/papyrus-util.git"
     },
     "scripts": {
         "build": "tsc",
-        "package": "yarn deploy && yarn pack",
-        "deploy": "cpy \"dist/*\" .",
-        "cleanup": "rimraf \"*.js\" \"*.ts\" \"*.tgz\""
+        "package": "yarn build && yarn deploy && yarn pack && yarn cleanup",
+        "deploy": "yarn build && cpy \"dist/*\" .",
+        "cleanup": "rimraf \"*.js\" \"*.ts\""
     },
     "devDependencies": {
         "cpy": "^8.1.2",
@@ -28,7 +27,11 @@
         "*.js",
         "*.ts"
     ],
+    "keywords": [
+        "skyrim",
+        "skryim platform"
+    ],
     "dependencies": {
-        "@skyrim-platform/skyrim-platform": "file:../skyrim-platform"
+        "@skyrim-platform/skyrim-platform": "^2.3.0"
     }
 }
