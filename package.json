@@ -1,9 +1,7 @@
 {
     "name": "@skyrim-platform/papyrus-util",
-    "version": "4.2.0",
+    "version": "4.2.3",
     "description": "TypeScript library for the PapyrusUtil Skyrim modding utility",
-    "main": "",
-    "types": "index.d.ts",
     "license": "MIT",
     "homepage": "https://github.com/skyrim-platform/papyrus-util",
     "repository": {
@@ -12,9 +10,9 @@
     },
     "scripts": {
         "build": "tsc",
-        "package": "yarn build && yarn deploy && yarn pack && yarn cleanup",
-        "deploy": "yarn build && cpy \"dist/*\" .",
-        "cleanup": "rimraf \"*.js\" \"*.ts\""
+        "watch": "tsc --watch",
+        "publish": "npm run build && cpy \"dist/*\" . && npm publish && npm run cleanup",
+        "cleanup": "rimraf \"*.js\" \"*.ts\" dist/"
     },
     "devDependencies": {
         "cpy": "^8.1.2",
@@ -29,7 +27,7 @@
     ],
     "keywords": [
         "skyrim",
-        "skryim platform"
+        "skyrim platform"
     ],
     "dependencies": {
         "@skyrim-platform/skyrim-platform": "^2.3.0"
